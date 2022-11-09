@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 20rem;
+    height:24rem;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: hsl(216, 12%, 8%);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.container_input,
+.show-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 1.5em;
+    color: white;
+}
+
+p{
+    font-size: 0.9em;
+    color: hsl(216, 12%, 54%);
+}
+
+
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(213, 19%, 18%);
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-size: 0.8em;
+    transition: background-color 0.2s ease-in;
+}
+
+
+input:hover,
+input:focus{
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+
+
+button{
+    background-color:hsl(25, 97%, 53%) ;
+    border: none;
+    width: 100%;
+    height: 2.8em;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15;
+    font-weight: 500;
+    color: white;
+    transition: background-color 0.2s ease-in;
+}
+
+
+button:hover,
+button:disabled:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+
+button:disabled{
+    background-color: hsl(213, 19%, 18%);
+}
+/* Active State */
+
+.show-input{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show-input img{
+    width: 8em;
+    height: 5em;
+}
+
+.show-input .rating-seleted{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(40, 50, 62, 0.427);
+    padding: 0.5em 0.9em;
+    border-radius: 1.5em;
+    color:hsla(25, 97%, 53%, 0.846);
+}
+
+.show-input .thankYou{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.thankYou h1{
+    margin-bottom: 0.3em;
+}
+
+.thankYou p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.active-state{
+    display: none;
+}
